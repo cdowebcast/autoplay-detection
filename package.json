@@ -1,0 +1,10 @@
+{
+  "name": "autoplay-detector",
+  "version": "0.1.0",
+  "description": "Detects sound on autoplay",
+  "main": "index.js",
+  "repository": "https://github.com/jermspeaks/autoplay-detection.git",
+  "author": "jermspeaks <jermspeaks@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
