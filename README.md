@@ -1,5 +1,7 @@
 # Autoplay Detection
 
+**This Library is not production ready yet. Use with discretion.**
+
 A small library to detect if autoplay with sound is working on the page.
 
 ## Installation
