@@ -1,19 +1,16 @@
 import { video as videofile } from './video';
-import * as utils from './commonUtils';
+// import * as utils from './commonUtils';
 
 export default canAutoplay;
 
 const canAutoplay = () =>
   new Promise((resolve, reject) => {
     let supportsAutoplay;
-
-    // const cleanUp = video => document.body.removeChild(video);
-
+    const cleanUp = video => document.body.removeChild(video);
     const afterPlay = (resolution) => video => () => {
-      utils.cleanUp(video);
+      cleanUp(video);
       resolve(resolution);
     }
-
     const successPlay = afterPlay(true);
     const failPlay = afterPlay(false);
 

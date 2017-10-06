@@ -1,6 +1,6 @@
 {
   "name": "autoplay-detector",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Detects sound on autoplay",
   "main": "index.js",
   "repository": "https://github.com/jermspeaks/autoplay-detection.git",
@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "open": "python -m SimpleHTTPServer 8089",
     "build": "./node_modules/.bin/rollup -c",
     "build:production": "NODE_ENV=production ./node_modules/.bin/rollup -c"
   },
@@ -20,6 +21,7 @@
     "babel-preset-minify": "^0.2.0",
     "rollup": "^0.50.0",
     "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-cleanup": "^1.0.1",
     "rollup-plugin-node-resolve": "^3.0.0"
   }
 }
