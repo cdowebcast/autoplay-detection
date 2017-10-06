@@ -8,7 +8,6 @@ export default {
 		format: 'umd',
 		name: 'autoplayDetector'
     },
-    sourcemap: 'inline',
     plugins: [
 	    resolve(),
 	    babel({
