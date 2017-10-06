@@ -12,5 +12,10 @@
   ],
   "plugins": [
     "external-helpers"
-  ]
+  ],
+  "env": {
+    "production": {
+      "presets": ["minify"]
+    }
+  }
 }

@@ -8,13 +8,16 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "./node_modules/.bin/rollup -c"
+    "build": "./node_modules/.bin/rollup -c",
+    "build:production": "NODE_ENV=production ./node_modules/.bin/rollup -c"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
+    "babel-minify": "^0.2.0",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-latest": "^6.24.1",
+    "babel-preset-minify": "^0.2.0",
     "rollup": "^0.50.0",
     "rollup-plugin-babel": "^3.0.2",
     "rollup-plugin-node-resolve": "^3.0.0"
